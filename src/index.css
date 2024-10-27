@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.SliderRoot {
+	position: relative;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	touch-action: none;
+	width: 200px;
+	height: 20px;
+}
+
+.SliderTrack {
+	background-color: var(--black-a10);
+	position: relative;
+	flex-grow: 1;
+	border-radius: 9999px;
+	height: 3px;
+}
+
+.SliderRange {
+	position: absolute;
+	background-color: white;
+	border-radius: 9999px;
+	height: 100%;
+}
+
+.SliderThumb {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	box-shadow: 0 2px 10px var(--black-a7);
+	border-radius: 10px;
+}
+.SliderThumb:hover {
+	background-color: var(--violet-3);
+}
+.SliderThumb:focus {
+	outline: none;
+	box-shadow: 0 0 0 5px var(--black-a8);
+}
+
+
